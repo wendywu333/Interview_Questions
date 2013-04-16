@@ -1,0 +1,46 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/4/2013
+ * 
+ */
+public class Valid_Sudoku {
+
+	public boolean isValidSudoku(char[][] board) {
+
+		if (board == null)
+			return false;
+
+		boolean[] checkrow = new boolean[9];
+		boolean[] checkcolumn = new boolean[9];
+
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if (board[i][j] != '.') {
+					if (checkrow[Character.getNumericValue(board[i][j])]) {
+						return false;
+					} else {
+						checkrow[Character.getNumericValue(board[i][j])] = true;
+					}
+				}
+
+				if (board[j][i] != '.') {
+					if (checkcolumn[Character.getNumericValue(board[j][i])]) {
+						return false;
+					} else {
+						checkcolumn[Character.getNumericValue(board[j][i])] = true;
+					}
+				}
+
+			}
+		}
+
+		return true;
+
+	}
+
+}

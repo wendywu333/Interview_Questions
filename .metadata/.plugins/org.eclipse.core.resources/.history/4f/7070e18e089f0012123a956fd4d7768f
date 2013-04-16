@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/6/2013
+ * 
+ */
+public class Balanced_Binary_Tree {
+
+	public boolean isBalanced(TreeNode root) {
+		if (root == null) {
+			return false;
+		}
+
+		if (!isBalanced(root.left) || !isBalanced(root.right)) {
+			return false;
+		} else {
+			return (Math.abs(height(root.left) - height(root.right)) > 1) ? false
+					: true;
+		}
+
+	}
+
+	private int height(TreeNode node) {
+		// TODO Auto-generated method stub
+		if (node == null)
+			return 0;
+		return Math.max(height(node.left), height(node.right)) + 1;
+	}
+
+}

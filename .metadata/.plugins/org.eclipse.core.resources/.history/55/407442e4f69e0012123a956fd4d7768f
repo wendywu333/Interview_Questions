@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date 4/6/2013
+ * 
+ */
+public class threeSum {
+
+	public ArrayList<ArrayList<Integer>> three_Sum(int[] num) {
+
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if (num.length < 3)
+			return res;
+		return null;
+
+	}
+
+}

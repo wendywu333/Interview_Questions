@@ -1,0 +1,76 @@
+/**
+ * 
+ */
+
+/**
+ * @author Wenzhe
+ * @date 3/7/2013
+ */
+public class Sort {
+
+	public static int[] quickSort(int[] arr, int low, int high) {
+
+		int lowStart = low;
+		int highEnd = high;
+		if (low < high) {
+			int pivokey = arr[low];
+			while (low < high) {
+
+				while (low < high && arr[high] > pivokey) {
+					high--;
+				}
+			
+				if (low < high)
+				arr[low++] = arr[high];
+
+				while (low < high && arr[low] < pivokey) {
+					low++;
+				}
+
+				if (low < high)
+				arr[high--] = arr[low];
+			}
+			arr[low] = pivokey;
+			quickSort(arr, lowStart, low - 1);
+			quickSort(arr, low + 1, highEnd);
+		}
+		return arr;
+	}
+	
+    public static int[] myQuickSort(int[] arr, int low, int high){
+        int left = low;
+        int right = high;
+        if(right>left){
+            int pivot = arr[left];
+            while(left<right){
+            
+                while(left<right && arr[right]>pivot){
+                    right--;
+                }
+                if(left<right){
+                    arr[left++] = arr[right];
+                }
+                while(left<right && arr[left]<pivot){
+                    low++;
+                }
+                if(left<right){
+                    arr[right--] = arr[left];
+                }
+            
+            }
+        
+            arr[left] = pivot;
+            myQuickSort(arr,low,left-1);
+            myQuickSort(arr,left+1,high);
+        
+        }
+        return arr;
+    }
+    
+    public static void main(String args[]){
+    	int[] newarr = {5,4,7,8,1,9,12};
+//    	myQuickSort(newarr,0,6);
+    	System.out.print(quickSort(newarr,0,6));
+    }
+	
+}

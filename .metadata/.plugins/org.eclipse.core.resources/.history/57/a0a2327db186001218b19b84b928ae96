@@ -1,0 +1,33 @@
+import java.util.HashMap;
+
+/**
+ * 
+ */
+
+/**
+ * @author Wenzhe
+ * @date 3/6/2013
+ */
+public class UniqueChar {
+	public static boolean isUnique(String s){
+		if(s.length() < 2){
+			return true;
+		}
+		HashMap LetterAppearance = new HashMap<Character,Integer>(26);   
+		for(int i=0;i<s.length();i++){
+			if(LetterAppearance.containsKey(s.charAt(i))){
+				return false;
+			}else{
+				LetterAppearance.put(s.charAt(i), 1);
+			}
+		}
+		
+		return true;
+		
+	}
+	
+	public static void main(String args[]){
+		String s = "abcsds";
+		System.out.println(isUnique(s));
+	}
+}

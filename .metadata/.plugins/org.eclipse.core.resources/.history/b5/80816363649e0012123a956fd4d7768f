@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/5/2013
+ * 
+ */
+public class Binary_Tree_Maximum_Path_Sum {
+
+	public int max = 0;
+
+	public int maxPathSum(TreeNode root) {
+
+		int[] res = dfs(root);
+		return res[0];
+	}
+
+	public int[] dfs(TreeNode root) {
+
+		int[] res = new int[2];
+		if (root == null) {
+			res[0] = 0;
+			res[1] = 0;
+			return res;
+		}
+		return null;
+
+	}
+}

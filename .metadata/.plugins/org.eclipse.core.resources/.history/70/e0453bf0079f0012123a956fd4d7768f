@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/6/2013
+ *
+ */
+public class Balanced_Binary_Tree {
+	
+	public boolean isBalanced(TreeNode root) {
+		return false;
+	}
+
+}

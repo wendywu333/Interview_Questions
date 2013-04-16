@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/4/2013
+ * 
+ */
+public class Valid_Palindrome {
+
+	public boolean isPalindrome(String s) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+	}
+
+}

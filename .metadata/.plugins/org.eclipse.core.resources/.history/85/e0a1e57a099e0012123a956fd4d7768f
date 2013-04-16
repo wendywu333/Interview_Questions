@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 4/5/2013
+ * 
+ */
+public class Binary_Tree_Maximum_Path_Sum {
+	public int maxPathSum(TreeNode root) {
+
+		if (root == null)
+			return 0;
+		return PathSum(root.left) + PathSum(root.right);
+
+	}
+
+	private int PathSum(TreeNode node) {
+		// TODO Auto-generated method stub
+		if (node == null)
+			return 0;
+		return node.val + Math.max(PathSum(node.left), PathSum(node.right));
+	}
+}

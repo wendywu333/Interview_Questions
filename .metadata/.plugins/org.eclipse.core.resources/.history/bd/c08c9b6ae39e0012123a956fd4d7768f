@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * @author Wenzhe
+ * @date 4/6/2013
+ * 
+ */
+public class Longest_Consecutive_Sequence {
+
+	public int longestConsecutive(int[] num) {
+
+		return 0;
+	}
+
+}
