@@ -341,3 +341,61 @@ HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
 HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
 	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
 	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@b05fcb),sourcePriority=16384)
+!SESSION 2013-04-16 19:10:06.492 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_43
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-04-16 19:10:18.503
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-16 20:52:32.995
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-16 20:52:32.995
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@60e390),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@60e390),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-16 20:52:32.995
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@60e390),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@60e390),sourcePriority=16384)
+!SESSION 2013-04-24 14:50:27.724 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_45
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-04-24 14:50:38.896
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-04-24 14:50:53.257
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-24 14:50:53.257
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1e5cf0),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1e5cf0),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-04-24 14:50:53.257
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1e5cf0),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1e5cf0),sourcePriority=16384)

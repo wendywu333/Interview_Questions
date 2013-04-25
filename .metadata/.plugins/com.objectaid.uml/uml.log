@@ -1,3 +1,2 @@
-2013-04-04 20:31:40.898 [Worker-6] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[ucls]: com.objectaid.uml.cls.model.ClassDiagramFactory@a34435
-2013-04-04 20:31:40.922 [Worker-6] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[useq]: com.objectaid.uml.seq.model.SequenceDiagramFactory@8fa832
-2013-04-06 20:49:47.901 [main] INFO    com.objectaid.uml.model.manage.LanguageElementManager getLanguageElementFactories: com.objectaid.uml.languageElementFactories: com.objectaid.uml.java.JavaElementFactory
+2013-04-24 14:51:01.347 [Worker-3] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[ucls]: com.objectaid.uml.cls.model.ClassDiagramFactory@7e33de
+2013-04-24 14:51:01.530 [Worker-3] INFO    com.objectaid.uml.model.manage.DiagramManager getFactories: com.objectaid.uml.diagramFactories[useq]: com.objectaid.uml.seq.model.SequenceDiagramFactory@16a4cf2
