@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 6/26/2013
+ *
+ */
+public class Palindrome_Number {
+	
+	public boolean isPalindrome(int x) {
+       
+		boolean result = false;
+		
+		return result;
+		
+        
+    }
+
+}

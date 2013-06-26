@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 6/25/2013
+ * 
+ */
+public class Median_of_Two_Sorted_Arrays {
+
+	public double findMedianSortedArrays(int A[], int B[]) {
+		// O(log(m+n))
+
+		return 0.00;
+
+	}
+
+	private int GetMedian(int a[], int n, int b[], int m, int k) {
+		if (n <= 0)
+			return b[k - 1];
+
+		if (m <= 0)
+			return a[k - 1];
+
+		return 0;
+	}
+}

@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date 6/26/2013
+ *
+ */
+public class Search_Insert_Position {
+	
+	 public int searchInsert(int[] A, int target) {
+	        // Start typing your Java solution below
+	        // DO NOT write main() function
+	        
+	    }
+
+}
