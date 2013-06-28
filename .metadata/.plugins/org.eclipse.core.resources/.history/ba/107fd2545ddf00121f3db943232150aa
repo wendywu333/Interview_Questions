@@ -10,9 +10,6 @@ import java.util.HashSet;
  * @author Wenzhe
  * @date 3/28/2013
  * passed all test cases
- * 
- * mine is O(n^2) see tuzi's solution for O(n)
- * 
  */
 public class Longest_Substring_Without_Repeating {
 	public int lengthOfLongestSubstring(String s) {
