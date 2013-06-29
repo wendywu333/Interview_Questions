@@ -7,6 +7,8 @@ package LeetCode;
  * @author Wenzhe
  * @date 4/7/2013
  * 
+ * passes all tests
+ * 
  */
 public class Longest_Common_Prefix {
 
