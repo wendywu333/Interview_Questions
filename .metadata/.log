@@ -470,3 +470,22 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp
 
 !ENTRY org.eclipse.core.net 1 0 2013-06-29 13:21:50.776
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-06-29 13:27:24.054
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-06-29 13:27:24.054
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@edbca8),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@edbca8),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-06-29 13:27:24.054
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@edbca8),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@edbca8),sourcePriority=16384)

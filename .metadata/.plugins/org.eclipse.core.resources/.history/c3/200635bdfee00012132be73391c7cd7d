@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jun 29, 2013
+ * 
+ */
+public class Swap_Nodes_in_Pairs {
+
+	public ListNode swapPairs(ListNode head) {
+
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ListNode res = head;
+
+		if (head == null || head.next == null)
+			return head;
+		
+		ListNode temp;
+
+		while (head != null) {
+			if(head.next == null){
+				return res;
+			}else{
+				if(head == res){
+					res = head.next;
+				}
+				
+				// before: someone -> head -> head.next -> somenode
+				// after: someone -> head.next - > head -> someone
+				
+				temp = head;
+				temp.next = head.next.next;
+				head.next = temp;
+				
+				head = temp.next;
+				
+			}
+		}
+
+		return res;
+	}
+
+}
