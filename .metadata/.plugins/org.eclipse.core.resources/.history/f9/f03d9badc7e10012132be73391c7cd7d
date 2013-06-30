@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jun 30, 2013
+ * 
+ */
+public class Minimum_Depth_of_Binary_Tree {
+
+	public int minDepth(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (root == null)
+			return 0;
+
+		return Math.min(this.minDepth(root.left), this.minDepth(root.right)) + 1;
+
+	}
+
+}
