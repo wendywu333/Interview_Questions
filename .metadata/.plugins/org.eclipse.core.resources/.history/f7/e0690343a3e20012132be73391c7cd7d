@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+/**
+ * @author Wenzhe
+ * @date Jul 1, 2013
+ * 
+ */
+public class Binary_Tree_Inorder_Traversal {
+
+	public ArrayList<Integer> inorderTraversal(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (root == null)
+			return null;
+		ArrayList<Integer> res = new ArrayList<Integer>();
+
+		Stack<TreeNode> s = new Stack<TreeNode>();
+		while (root != null) {
+			s.push(root);
+			root = root.left;
+		}
+
+		return res;
+
+	}
+
+}

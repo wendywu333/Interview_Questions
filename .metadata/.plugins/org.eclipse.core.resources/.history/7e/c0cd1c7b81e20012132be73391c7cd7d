@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jun 30, 2013
+ * 
+ */
+public class Flatten_Binary_Tree_to_Linked_List {
+
+	public void flatten(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (root == null)
+			return;
+		
+		
+
+	}
+
+}

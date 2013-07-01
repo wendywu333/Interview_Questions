@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 1, 2013
+ * 
+ */
+public class Climbing_Stairs {
+
+	public int climbStairs(int n) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+		if (n <= 0)
+			return 0;
+		if (n == 1)
+			return 1;
+		while (n >= 2) {
+
+		}
+
+		return 0;
+
+	}
+
+}
