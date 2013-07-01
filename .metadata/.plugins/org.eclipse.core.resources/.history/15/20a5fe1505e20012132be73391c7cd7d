@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jun 30, 2013
+ * 
+ */
+public class Merge_k_Sorted_Lists {
+
+	public ListNode mergeKLists(ArrayList<ListNode> lists) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+		if (lists == null || lists.isEmpty())
+			return null;
+
+		while (lists.size() > 1) {
+			ArrayList<ListNode> cur = new ArrayList<ListNode>();
+			for (int i = 0; i < lists.size(); i = i + 2) {
+				cur.add(merge(lists.get(i), lists.get(i + 1)));
+				if (i + 2 == lists.size() - 1) {
+					cur.add(lists.get(i + 2));
+				}
+
+			}
+		}
+
+		return lists.get(0);
+
+	}
+
+	private ListNode merge(ListNode node1, ListNode node2) {
+		// TODO Auto-generated method stub
+		if (node1 == null)
+			return node2;
+		if (node2 == null)
+			return node1;
+
+		return null;
+	}
+
+}

@@ -6,8 +6,9 @@ package LeetCode;
 /**
  * @author Wenzhe
  * @date 6/25/2013
+ * revised on 6/20/2013
  * 
- * passed all tests
+ *       passed all tests
  * 
  */
 public class Reverse_Integer {
@@ -19,8 +20,7 @@ public class Reverse_Integer {
 		boolean neg = false;
 		if (x == 0)
 			return 0;
-		char[] a = new char[10];
-		int size = 0;
+
 		int result = 0;
 		if (x < 0) {
 			neg = true;
@@ -28,16 +28,8 @@ public class Reverse_Integer {
 		}
 
 		while (x > 0) {
-			int i = x % 10;
-			if (i >= 0 && i <= 9) {
-				a[size] = Character.forDigit(i, 10);
-				size++;
-			}
-			x = (x - (x % 10)) / 10;
-		}
-
-		for (int n = 0; n < size; n++) {
-			result = Character.getNumericValue(a[n]) + result * 10;
+			result = x % 10 + result * 10;
+			x = x / 10;
 		}
 
 		return neg ? (0 - result) : result;

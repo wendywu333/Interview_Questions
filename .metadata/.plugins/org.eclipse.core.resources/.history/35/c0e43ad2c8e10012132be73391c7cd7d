@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jun 30, 2013
+ * 
+ */
+public class Validate_Binary_Search_Tree {
+
+	public boolean isValidBST(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+		return false;
+
+	}
+
+}

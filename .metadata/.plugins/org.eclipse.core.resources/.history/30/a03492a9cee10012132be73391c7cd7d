@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jun 27, 2013
+ * 
+ */
+public class First_Missing_Positive {
+
+	public int firstMissingPositive(int[] A) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+		int n = A.length;
+		for (int i = 0; i < n; i++) {
+			if (A[i] != i + 1) {
+
+			}
+
+		}
+
+		return 0;
+
+	}
+
+}
