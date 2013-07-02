@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 1, 2013
+ * 
+ */
+public class Combinations {
+
+	public ArrayList<ArrayList<Integer>> combine(int n, int k) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if (n == 0 || k == 0)
+			return res;
+
+		for (int i = 0; i < k; i++) {
+
+		}
+
+	}
+
+}

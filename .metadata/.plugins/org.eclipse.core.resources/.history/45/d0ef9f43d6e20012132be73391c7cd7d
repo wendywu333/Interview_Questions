@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 1, 2013
+ * 
+ */
+public class Count_and_Say {
+	
+	
+	
+	public String countAndSay(int n) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		String res = "";
+		int time = 0;
+		String str = say("1",)
+		
+		
+
+		return res;
+
+	}
+
+}
