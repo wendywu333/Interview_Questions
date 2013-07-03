@@ -489,3 +489,83 @@ HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
 HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
 	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
 	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@edbca8),sourcePriority=16384)
+!SESSION 2013-07-02 01:21:22.627 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-07-02 01:21:31.244
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-07-02 01:22:36.934
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-07-02 11:12:18.532
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-07-02 11:12:18.532
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@15b6aad),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@15b6aad),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-07-02 11:12:18.532
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@15b6aad),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@15b6aad),sourcePriority=16384)
+!SESSION 2013-07-03 11:27:26.943 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_51
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/Wenzhe/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-07-03 11:27:28.622
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-07-03 11:27:30.804
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-07-03 11:27:52.478
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-07-03 11:27:52.478
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1f9f0f2),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.CommandActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1f9f0f2),sourcePriority=16384)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-07-03 11:27:52.478
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1f9f0f2),sourcePriority=16384)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionDelegateHandlerProxy(null,com.objectaid.uml.controller.delegate.SelectionActionDelegate),
+	expression=WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@1f9f0f2),sourcePriority=16384)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2013-07-03 13:27:26.736
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for Character {key=Ljava/lang/Character;} [in Character.class [in java.lang [in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:86)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:996)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:462)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:555)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:512)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:495)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:82)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2013-07-03 13:27:26.737
+!MESSAGE Unknown javadoc format for Character {key=Ljava/lang/Character;} [in Character.class [in java.lang [in /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar]]]

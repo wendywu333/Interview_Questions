@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 2, 2013
+ * 
+ */
+public class Symmetric_Tree {
+
+	public boolean isSymmetric(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		
+		if(root == null) return true;
+
+		return false;
+	}
+
+}
