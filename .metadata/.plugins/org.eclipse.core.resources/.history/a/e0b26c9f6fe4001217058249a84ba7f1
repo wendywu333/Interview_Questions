@@ -1,0 +1,45 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 3, 2013
+ * 
+ */
+public class Reverse_Linked_List_II {
+
+	public ListNode reverseBetween(ListNode head, int m, int n) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+
+		if (m == n)
+			return head;
+		ListNode cur = head;
+		int pos = 1;
+		while (pos < m - 1) {
+			cur = cur.next;
+			pos++;
+		}
+		ListNode last = cur;
+		ListNode temp2 = null;
+		cur = cur.next;
+		pos++;
+		ListNode temp;
+		while (pos <= m) {
+
+			temp = cur.next;
+			cur.next = temp2;
+			last.next = cur;
+			temp2 = cur;
+			cur = temp;
+			pos++;
+		}
+
+		temp2.next = cur;
+
+		return head;
+
+	}
+}
