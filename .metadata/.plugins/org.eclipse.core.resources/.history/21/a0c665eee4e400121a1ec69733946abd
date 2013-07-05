@@ -1,0 +1,77 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 4, 2013
+ * 
+ */
+public class Palindrome_Partitioning {
+
+	public ArrayList<ArrayList<String>> partition(String s) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (s == null || s.length() == 0)
+			return null;
+
+		int n = s.length();
+		boolean a[][] = new boolean[n][n];
+		for (int i = 0; i < n; i++) {
+			a[i][i] = true;
+			if (i != n - 1) {
+				if (s.charAt(i) == s.charAt(i + 1)) {
+					a[i][i + 1] = true;
+				}
+			}
+		}
+
+		for (int len = 3; len <= n; len++) {
+			for (int i = 0; i <= n - len; i++) {
+				int j = i + len - 1;
+				if (s.charAt(j) == s.charAt(i) && a[i + 1][j - 1])
+					a[i][j] = true;
+			}
+		}
+
+		ArrayList<ArrayList<String>> res = new ArrayList<ArrayList<String>>();
+		ArrayList<String> aRes = new ArrayList<String>();
+
+		backTracking(s, a, res, aRes, 0, n);
+
+		return res;
+
+	}
+
+	private boolean backTracking(String s, boolean[][] a,
+			ArrayList<ArrayList<String>> res, ArrayList<String> aRes, int cur,
+			int len) {
+
+		if (cur == len) {
+			res.add(aRes);
+			aRes.remove(aRes.size() - 1);
+			aRes = new ArrayList<String>(aRes);
+			return false;
+		}
+
+		for (int j = cur; j < len; j++) {
+			if (a[cur][j] == true) {
+				aRes.add(s.substring(cur, j));
+				boolean b = backTracking(s, a, res, aRes, j + 1, len);
+				if (!b) {
+					aRes.remove(aRes.size() - 1);
+					return false;
+				}
+			}
+		}
+		return true;
+
+	}
+	
+	public void main(String args[]){
+		
+	}
+}

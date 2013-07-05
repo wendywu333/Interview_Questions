@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="37" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
 <window height="774" maximized="true" width="1264" x="3" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -32,41 +32,37 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Median_of_Two_Sorted_Arrays.java" partName="Median_of_Two_Sorted_Arrays.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java" title="Median_of_Two_Sorted_Arrays.java" tooltip="Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Median_of_Two_Sorted_Arrays.java" partName="Median_of_Two_Sorted_Arrays.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java" title="Median_of_Two_Sorted_Arrays.java" tooltip="Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1359" selectionTopPixel="285"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Merge_Two_Sorted_Lists.java" partName="Merge_Two_Sorted_Lists.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/LeetCode/Merge_Two_Sorted_Lists.java" title="Merge_Two_Sorted_Lists.java" tooltip="Career_Cup_150/src/LeetCode/Merge_Two_Sorted_Lists.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Career_Cup_150/src/LeetCode/Merge_Two_Sorted_Lists.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="345" selectionTopPixel="300"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="First_Missing_Positive.java" partName="First_Missing_Positive.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/LeetCode/First_Missing_Positive.java" title="First_Missing_Positive.java" tooltip="Career_Cup_150/src/LeetCode/First_Missing_Positive.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Career_Cup_150/src/LeetCode/First_Missing_Positive.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="271" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Letter_Combinations_of_a_Phone_Number.java" partName="Letter_Combinations_of_a_Phone_Number.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/LeetCode/Letter_Combinations_of_a_Phone_Number.java" title="Letter_Combinations_of_a_Phone_Number.java" tooltip="Career_Cup_150/src/LeetCode/Letter_Combinations_of_a_Phone_Number.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Career_Cup_150/src/LeetCode/Letter_Combinations_of_a_Phone_Number.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="330"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Battery_Package.java" partName="Battery_Package.java" path="/Users/Wenzhe/Documents/Interview_Questions/Career_Cup_150/src/others/Battery_Package.java" title="Battery_Package.java" tooltip="Career_Cup_150/src/others/Battery_Package.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Career_Cup_150/src/others/Battery_Package.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="416" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState>
+<isTrackingSelection value="false"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (12 items)"/>
+<category IMemento.internal.id="Warnings (15 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -75,9 +71,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -107,11 +100,12 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sorter groupBy="CATEGORY_QUERY">&#x0A;<sorter>&#x0A;<sort0 sortDirection="1" sortKey="PRIORITY"/>
 <sort1 sortDirection="1" sortKey="RANK"/>
 <sort2 sortDirection="1" sortKey="DATE_CREATED"/>
 <sort3 sortDirection="1" sortKey="NONE"/>
@@ -124,11 +118,12 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -196,10 +191,10 @@
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29898402"/>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.29898402"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.29898402"/>
+<view id="org.eclipse.jdt.ui.SourceView" ratio="0.29898402"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29753265"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -233,7 +228,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.17055511" ratioLeft="212" ratioRight="1031" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.83090377" ratioLeft="570" ratioRight="116" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -245,13 +240,13 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@6963b0" ratio="0.784585" ratioLeft="794" ratioRight="218" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.5" ratioLeft="256" ratioRight="256" relationship="4" relative="org.eclipse.ui.internal.ViewStack@6963b0">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
@@ -262,171 +257,284 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="laser.visualjil.eclipse.assistants.actionset"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.SignalsView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.ModuleView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.DisassemblyView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.executablesView"/>
+<show_view_action id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74959874" ratioLeft="934" ratioRight="312" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74891144" ratioLeft="516" ratioRight="173" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4496124" ratioLeft="232" ratioRight="284" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74959874" ratioLeft="934" ratioRight="312" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.DisassemblyView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="623" ratioRight="623" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Interleaving_String.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Merge_Two_Sorted_Lists.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Longest_Common_Prefix.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/First_Missing_Positive.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Letter_Combinations_of_a_Phone_Number.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/others/Battery.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/others/Battery_Package.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Minimum_Window_Substring.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Median_of_Two_Sorted_Arrays.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Search_Insert_Position.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Remove_Nth_Node_From_End_of_List.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Remove_Element.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Career_Cup_150/src/LeetCode/Reverse_Linked_List_II.java"/>
 </editors>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1202" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1235" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1205" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1256" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
+<item historyLabel="Minimum_Window_Substring.java" index="0">
 <position info="not_deleted" x="1257" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1354" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1481" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1357" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1010" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1384" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1052" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1473" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1078" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1472" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1107" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1526" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1128" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1552" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1362" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1576" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1608" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1362" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1363" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1481" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1052" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1078" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1107" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1128" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1160" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1218" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1235" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1256" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1257" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1481" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1774" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1805" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1010" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="2216" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="2248" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="2352" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="2434" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1362" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1508" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1765" y="0"/>
+</item>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
 <position info="not_deleted" x="1660" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="1659" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1688" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="95" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1757" y="0"/>
 </item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="1763" y="0"/>
 </item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="310" y="0"/>
+<item historyLabel="Minimum_Window_Substring.java" index="0">
+<position info="not_deleted" x="185" y="0"/>
 </item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="310" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="344" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="376" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="569" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="559" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="735" y="0"/>
-</item>
-<item historyLabel="Longest_Common_Prefix.java" index="2">
-<position info="not_deleted" x="94" y="0"/>
-</item>
-<item historyLabel="Merge_Two_Sorted_Lists.java" index="1">
-<position info="not_deleted" x="345" y="0"/>
-</item>
-<item historyLabel="First_Missing_Positive.java" index="3">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="Letter_Combinations_of_a_Phone_Number.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Battery.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Letter_Combinations_of_a_Phone_Number.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="499" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="547" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="328" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="656" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="603" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="621" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="622" y="0"/>
-</item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="95" y="0"/>
-</item>
-<item historyLabel="Median_of_Two_Sorted_Arrays.java" index="7">
+<item historyLabel="Median_of_Two_Sorted_Arrays.java" index="1">
 <position info="not_deleted" x="1359" y="0"/>
 </item>
-<item historyLabel="Search_Insert_Position.java" index="8">
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Remove_Nth_Node_From_End_of_List.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
+<position info="not_deleted" x="422" y="0"/>
 </item>
-<item historyLabel="Remove_Element.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
+<position info="not_deleted" x="574" y="0"/>
 </item>
-<item historyLabel="Letter_Combinations_of_a_Phone_Number.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
+<position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Interleaving_String.java" index="0">
-<position info="not_deleted" x="95" y="0"/>
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
+<position info="not_deleted" x="621" y="0"/>
 </item>
-<item historyLabel="Letter_Combinations_of_a_Phone_Number.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Reverse_Linked_List_II.java" index="2">
+<position info="not_deleted" x="87" y="0"/>
 </item>
-<item historyLabel="Search_Insert_Position.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Letter_Combinations_of_a_Phone_Number.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="622" y="0"/>
-</item>
-<item historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="423" y="0"/>
-</item>
-<item active="true" historyLabel="Battery_Package.java" index="6">
-<position info="not_deleted" x="451" y="0"/>
+<item active="true" historyLabel="Median_of_Two_Sorted_Arrays.java" index="1">
+<position info="not_deleted" x="1359" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -434,11 +542,7 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 <trimItem IMemento.internal.id="bottom"/>
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@6963b0"/>
@@ -455,6 +559,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reverse_Linked_List_II.java" tooltip="Career_Cup_150/src/LeetCode/Reverse_Linked_List_II.java">
+<persistable path="/Career_Cup_150/src/LeetCode/Reverse_Linked_List_II.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Minimum_Window_Substring.java" tooltip="Career_Cup_150/src/LeetCode/Minimum_Window_Substring.java">
+<persistable path="/Career_Cup_150/src/LeetCode/Minimum_Window_Substring.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Combinations.java" tooltip="Career_Cup_150/src/LeetCode/Combinations.java">
+<persistable path="/Career_Cup_150/src/LeetCode/Combinations.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Remove_Element.java" tooltip="Career_Cup_150/src/LeetCode/Remove_Element.java">
 <persistable path="/Career_Cup_150/src/LeetCode/Remove_Element.java"/>
 </file>
@@ -487,15 +600,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Longest_Consecutive_Sequence.java" tooltip="Career_Cup_150/src/LeetCode/Longest_Consecutive_Sequence.java">
 <persistable path="/Career_Cup_150/src/LeetCode/Longest_Consecutive_Sequence.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="P2.java" tooltip="Career_Cup_150/src/projecteuler/P2.java">
-<persistable path="/Career_Cup_150/src/projecteuler/P2.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="P1.java" tooltip="Career_Cup_150/src/projecteuler/P1.java">
-<persistable path="/Career_Cup_150/src/projecteuler/P1.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="XOR_key.java" tooltip="Career_Cup_150/src/hacker_rank/XOR_key.java">
-<persistable path="/Career_Cup_150/src/hacker_rank/XOR_key.java"/>
 </file>
 </mruList>
 </workbench>

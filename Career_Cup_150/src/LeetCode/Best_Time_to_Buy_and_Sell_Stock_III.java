@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 4, 2013
+ * 
+ */
+public class Best_Time_to_Buy_and_Sell_Stock_III {
+
+	public int maxProfit(int[] prices) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		int maxProfit = 0;
+
+		return maxProfit;
+
+	}
+
+}

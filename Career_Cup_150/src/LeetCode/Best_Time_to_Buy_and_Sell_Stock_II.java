@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 4, 2013
+ * 
+ * passed all tests
+ * 
+ */
+public class Best_Time_to_Buy_and_Sell_Stock_II {
+
+	public int maxProfit(int[] prices) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		int maxProfit = 0;
+		int curMin = Integer.MAX_VALUE;
+
+		for (int i = 0; i < prices.length; i++) {
+
+			if (i == prices.length - 1) {
+				if (curMin != Integer.MAX_VALUE)
+					maxProfit = maxProfit + prices[i] - curMin;
+				break;
+			}
+			if (prices[i] >= prices[i + 1] && curMin != Integer.MAX_VALUE) {
+				maxProfit = maxProfit + prices[i] - curMin;
+				curMin = Integer.MAX_VALUE;
+			} else if (prices[i] <= prices[i + 1]
+					&& curMin == Integer.MAX_VALUE) {
+				curMin = prices[i];
+			} else {
+
+			}
+
+		}
+
+		return maxProfit;
+
+	}
+
+}
