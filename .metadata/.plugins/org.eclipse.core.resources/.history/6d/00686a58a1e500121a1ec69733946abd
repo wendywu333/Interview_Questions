@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * @author Wenzhe
+ * @date Jul 5, 2013
+ * 
+ */
+public class Best_Time_to_Buy_and_Sell_Stock_III {
+
+	public int maxProfit(int[] prices) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		int max = 0;
+
+		if (prices.length <= 1)
+			return max;
+
+		int min = Integer.MAX_VALUE;
+		int[] maxprofit = new int[prices.length];
+		maxprofit[0] = 0;
+
+		for (int i = 1; i < prices.length; i++) {
+			min = (prices[i] < min) ? prices[i] : min;
+			int tempmaxprofit = (prices[i] - min > maxprofit[i - 1]) ? prices[i]
+					- min
+					: maxprofit[i - 1];
+			maxprofit[i] = tempmaxprofit;
+		}
+
+	}
+
+}

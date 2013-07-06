@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+/**
+ * @author Wenzhe
+ * @date Jul 5, 2013
+ * 
+ */
+public class Combination_Sum {
+
+	public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates,
+			int target) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		ArrayList<Integer> can = new ArrayList<Integer>();
+		for (int i = 0; i < candidates.length; i++) {
+			can.add(candidates[i]);
+		}
+		Collections.sort(can);
+
+		if (target < can.get(0))
+			return res;
+
+		return res;
+
+	}
+}

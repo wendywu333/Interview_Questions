@@ -10,8 +10,6 @@ import java.util.HashMap;
  * @author Wenzhe
  * @date Jul 5, 2013
  * 
- * passed all tests
- * 
  */
 public class Best_Time_to_Buy_and_Sell_Stock_III {
 

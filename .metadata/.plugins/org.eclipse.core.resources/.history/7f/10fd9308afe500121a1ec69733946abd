@@ -10,8 +10,6 @@ import java.util.HashMap;
  * @author Wenzhe
  * @date Jul 5, 2013
  * 
- * passed all tests
- * 
  */
 public class Best_Time_to_Buy_and_Sell_Stock_III {
 
@@ -44,8 +42,8 @@ public class Best_Time_to_Buy_and_Sell_Stock_III {
 		for (int i = n - 2; i > 0; i--) {
 
 			maxx = (prices[i] > maxx) ? prices[i] : maxx;
-			maxprofit2[i] = (maxx - prices[i] > maxprofit2[i + 1]) ? maxx
-					- prices[i] : maxprofit2[i + 1];
+			maxprofit2[i] = (maxx - prices[i] > maxprofit1[i + 1]) ? maxx
+					- prices[i] : maxprofit1[i + 1];
 		}
 
 		for (int i = 0; i < n - 1; i++) {
