@@ -10,8 +10,6 @@ import java.util.Arrays;
  * @author Wenzhe
  * @date Jul 6, 2013
  * 
- * passed all tests
- * 
  */
 public class Combination_Sum {
 
@@ -40,22 +38,10 @@ public class Combination_Sum {
 		}
 
 		for (int j = i; j < can.length; j++) {
-			if (can[j] > target)
-				break;
-			for (ArrayList<Integer> temp : prev) {
-				temp.add(can[j]);
-			}
-			ArrayList<ArrayList<Integer>> next = recuCombSum(can, target
-					- can[j], j, prev);
-			if (next.size() > 0) {
-				res.addAll(next);
-			}
-			for (ArrayList<Integer> temp : prev)
-				temp.remove(temp.size() - 1);
 
 		}
 
-		return res;
+		return null;
 	}
 
 	public static void main(String args[]) {

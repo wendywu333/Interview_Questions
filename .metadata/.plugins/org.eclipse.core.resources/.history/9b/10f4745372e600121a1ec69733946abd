@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ * 
+ */
+public class Combination_Sum {
+
+	public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates,
+			int target) {
+
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		Arrays.sort(candidates);
+
+		if (target < candidates[0])
+			return res;
+
+		ArrayList<Integer> aRes = new ArrayList<Integer>();
+		backtracking(res, aRes, candidates, 0, target);
+
+		return res;
+
+	}
+
+	private boolean backtracking(ArrayList<ArrayList<Integer>> res,
+			ArrayList<Integer> aRes, int[] can, int start, int target) {
+		// TODO Auto-generated method stub
+		if (target == 0) {
+			res.add(new ArrayList<Integer>(aRes));
+			return false;
+		}
+
+		if (start >= can.length || target < can[start])
+			return false;
+
+		for (int i = 0; i <= target / can[start]; i++) {
+
+			int a = can[start];
+			for (int j = 0; j < i; j++) {
+				aRes.add(a);
+			}
+			boolean b = backtracking(res, aRes, can, i + 1, target - i * a);
+			if (!b) {
+				for (int j = 0; j < i; j++) {
+					aRes.remove(aRes.size() - 1);
+				}
+				return false;
+			}
+
+		}
+
+		return true;
+
+	}
+
+	public static void main(String args[]) {
+		Combination_Sum o = new Combination_Sum();
+		o.combinationSum(new int[] { 1, 2 }, 2);
+	}
+}

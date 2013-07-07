@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ * 
+ */
+public class Combination_Sum {
+
+	public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates,
+			int target) {
+
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		res.add(new ArrayList<Integer>());
+		Arrays.sort(candidates);
+
+		return recuCombSum(candidates, target, 0, res);
+	}
+
+
+	private ArrayList<ArrayList<Integer>> recuCombSum(int[] candidates,
+			int target, int i, ArrayList<ArrayList<Integer>> res) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public static void main(String args[]) {
+		Combination_Sum o = new Combination_Sum();
+		o.combinationSum(new int[] { 1, 2 }, 2);
+	}
+}

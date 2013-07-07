@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ * 
+ * passed all tests
+ * 
+ * List contains() - determined by equals!
+ * 
+ */
+public class Combination_Sum_II {
+
+	public ArrayList<ArrayList<Integer>> ret;
+	public ArrayList<Integer> cur;
+
+	public ArrayList<ArrayList<Integer>> combinationSum2(int[] candidates,
+			int target) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		cur = new ArrayList<Integer>();
+		ret = new ArrayList<ArrayList<Integer>>();
+		Arrays.sort(candidates);
+		dfs(candidates, 0, target, cur);
+		return ret;
+
+	}
+
+	private void dfs(int[] num, int index, int target, ArrayList<Integer> cur) {
+		if (index == num.length)
+			return;
+		if (target < num[index])
+			return;
+		else {
+			if (target == num[index]) {
+				cur.add(num[index]);
+				if (!ret.contains(cur))
+					ret.add(new ArrayList<Integer>(cur));
+				cur.remove(cur.size() - 1);
+				dfs(num, index + 1, target, cur);
+			} else {
+				cur.add(num[index]);
+				dfs(num, index + 1, target - num[index], cur);
+				cur.remove(cur.size() - 1);
+				dfs(num, index + 1, target, cur);
+			}
+		}
+	}
+
+}

@@ -10,8 +10,6 @@ import java.util.Arrays;
  * @author Wenzhe
  * @date Jul 6, 2013
  * 
- * passed all tests
- * 
  */
 public class Combination_Sum {
 

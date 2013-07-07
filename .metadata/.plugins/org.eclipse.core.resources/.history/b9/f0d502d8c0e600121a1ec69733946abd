@@ -10,27 +10,24 @@ import java.util.Arrays;
  * @author Wenzhe
  * @date Jul 6, 2013
  * 
- * passed all tests
- * 
  */
-public class Combination_Sum {
+public class Combination_Sum_II {
 
-	public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates,
-			int target) {
-
+	public ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		res.add(new ArrayList<Integer>());
-		Arrays.sort(candidates);
+		Arrays.sort(num);
 
-		return recuCombSum(candidates, target, 0, res);
+		return recurCombSum2(num, target, 0, res);
+
 	}
 
-	private ArrayList<ArrayList<Integer>> recuCombSum(int[] can, int target,
+	private ArrayList<ArrayList<Integer>> recurCombSum2(int[] num, int target,
 			int i, ArrayList<ArrayList<Integer>> prev) {
 		// TODO Auto-generated method stub
-
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
-
 		if (target == 0) {
 			for (ArrayList<Integer> temp : prev) {
 				ArrayList<Integer> temp1 = new ArrayList<Integer>(temp);
@@ -39,14 +36,14 @@ public class Combination_Sum {
 			return res;
 		}
 
-		for (int j = i; j < can.length; j++) {
-			if (can[j] > target)
+		for (int j = i; j < num.length; j++) {
+			if (num[j] > target)
 				break;
 			for (ArrayList<Integer> temp : prev) {
-				temp.add(can[j]);
+				temp.add(num[j]);
 			}
-			ArrayList<ArrayList<Integer>> next = recuCombSum(can, target
-					- can[j], j, prev);
+			ArrayList<ArrayList<Integer>> next = recurCombSum2(num, target
+					- num[j], j + 1, prev);
 			if (next.size() > 0) {
 				res.addAll(next);
 			}
@@ -58,8 +55,4 @@ public class Combination_Sum {
 		return res;
 	}
 
-	public static void main(String args[]) {
-		Combination_Sum o = new Combination_Sum();
-		o.combinationSum(new int[] { 1, 2 }, 2);
-	}
 }

@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ * 
+ */
+public class Combination_Sum_II {
+
+	public ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		res.add(new ArrayList<Integer>());
+		Arrays.sort(num);
+		
+		
+		
+		return recurCombSum2(num, target, 0, res);
+
+	}
+
+	private ArrayList<ArrayList<Integer>> recurCombSum2(int[] num, int target,
+			int i, ArrayList<ArrayList<Integer>> res) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

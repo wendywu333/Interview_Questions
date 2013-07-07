@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ * 
+ */
+public class Combination_Sum_II {
+
+	public ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		Arrays.sort(num);
+
+	}
+
+}
