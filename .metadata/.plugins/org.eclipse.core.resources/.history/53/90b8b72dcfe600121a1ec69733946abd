@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 6, 2013
+ *
+ */
+public class Partition_List {
+	
+	public ListNode partition(ListNode head, int x) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        
+    }
+
+}

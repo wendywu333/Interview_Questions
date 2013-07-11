@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 7, 2013
+ *
+ */
+public class Insert_Interval {
+	
+	public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+		
+		
+		
+		return null;
+
+        
+    }
+
+}

@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.Arrays;
+
+/**
+ * @author Wenzhe
+ * @date Jul 10, 2013
+ * 
+ */
+public class Next_Permutation {
+
+	public void nextPermutation(int[] num) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (num == null || num.length <= 1)
+			return;
+
+		nextPmt(0, num);
+
+	}
+
+	private void nextPmt(int i, int[] num) {
+		// TODO Auto-generated method stub
+		if (i >= num.length - 1)
+			return;
+		boolean stop = false;
+		// break outer loop
+		int m = 0, len = 0;
+		int t = -1;
+		for (len = 1; len <= num.length - 1 - i; len++) {
+			for (m = num.length - 1; m >= i + len; m--) {
+				if (num[m] > num[m - len]) {
+					// System.out.println(m+"     ");
+
+					int temp = num[m];
+					num[m] = num[m - len];
+					num[m - len] = temp;
+
+					t = m - len;
+
+					stop = true;
+					break;
+				}
+			}
+		}
+		// System.out.println(m+"     "+j);
+		// there is no next permutation
+		if (!stop) {
+			// System.out.println("sort run!");
+			Arrays.sort(num, i, num.length);
+			return;
+		}
+		System.out.println(m+"     "+t);
+		nextPmt(t + 1, num);
+
+	}
+
+	public static void main(String args[]) {
+		Next_Permutation o = new Next_Permutation();
+		o.nextPermutation(new int[] { 1, 2 });
+	}
+}

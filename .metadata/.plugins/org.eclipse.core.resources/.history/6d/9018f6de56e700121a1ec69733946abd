@@ -1,0 +1,89 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 7, 2013
+ * 
+ */
+public class Insert_Interval {
+
+	// Given a set of non-overlapping intervals, insert a new interval into the
+	// intervals (merge if necessary).
+	// You may assume that the intervals were initially sorted according to
+	// their start times.
+
+	public ArrayList<Interval> insert(ArrayList<Interval> intervals,
+			Interval newInterval) {
+
+		int start = -1, end = intervals.size();
+
+		for (int i = 0; i < intervals.size(); i++) {
+			if (intervals.get(i).start <= newInterval.start)
+				start = i;
+			if (intervals.get(i).end >= newInterval.end) {
+				end = i;
+				break;
+			}
+		}
+		
+		System.out.println(start);
+		System.out.println(end);
+		
+
+		int a = newInterval.start;
+		int b = newInterval.end;
+		int c, d, e = 0;
+		if (start == -1)
+			c = Integer.MIN_VALUE;
+		else
+			c = intervals.get(start).end;
+
+		if (end == intervals.size())
+			d = Integer.MAX_VALUE;
+		else {
+			d = intervals.get(end).start;
+			e = intervals.get(end).end;
+		}
+
+		if (start == end)
+			return intervals;
+
+		for (int i = end - 1; i > start; i--) {
+			intervals.remove(i);
+		}
+
+		if (a > c && b < d) {
+			intervals.add(start + 1, newInterval);
+		} else if (a > c && b >= d) {
+			intervals.remove(end);
+			intervals.add(start + 1, new Interval(a, e));
+		} else if (a <= c && b < d) {
+			intervals.add(start + 1,
+					new Interval(intervals.get(start).start, b));
+			intervals.remove(start);
+		} else {
+			intervals.remove(end);
+			intervals.add(start + 1,
+					new Interval(intervals.get(start).start, e));
+			intervals.remove(start);
+		}
+
+		return intervals;
+
+	}
+
+	public static void main(String[] args) {
+		Insert_Interval o = new Insert_Interval();
+		ArrayList<Interval> intervals = new ArrayList<Interval>();
+		intervals.add(new Interval(2, 4));
+		intervals.add(new Interval(5, 7));
+		intervals.add(new Interval(8, 10));
+		intervals.add(new Interval(11, 13));
+		o.insert(intervals, new Interval(3, 8));
+	}
+}

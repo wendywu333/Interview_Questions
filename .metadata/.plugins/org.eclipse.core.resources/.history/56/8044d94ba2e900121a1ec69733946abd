@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 10, 2013
+ * 
+ */
+public class Next_Permutation {
+
+	public void nextPermutation(int[] num) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (num == null || num.length <= 1)
+			return;
+
+		nextPmt(0, num.length, num);
+
+	}
+
+	private void nextPmt(int i, int len, int[] num) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

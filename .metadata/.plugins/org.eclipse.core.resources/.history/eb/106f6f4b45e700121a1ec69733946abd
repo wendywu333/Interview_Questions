@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 7, 2013
+ * 
+ */
+public class Insert_Interval {
+
+	// Given a set of non-overlapping intervals, insert a new interval into the
+	// intervals (merge if necessary).
+	// You may assume that the intervals were initially sorted according to
+	// their start times.
+
+	public ArrayList<Interval> insert(ArrayList<Interval> intervals,
+			Interval newInterval) {
+
+		int start = -1, end = -1;
+
+		for (int i = 0; i < intervals.size(); i++) {
+			if (intervals.get(i).start <= newInterval.start)
+				start = i;
+			if (intervals.get(i).end >= newInterval.end) {
+				end = i;
+				break;
+			}
+		}
+		if (start == -1 && end == -1) {
+			intervals.clear();
+			intervals.add(newInterval);
+		} else if (start == -1) {
+			for (int i = 0; i <= end; i++)
+				intervals.remove(i);
+			intervals.add(0, new Interval(newInterval.start,
+					intervals.get(end).end));
+		} else if (end == -1) {
+			int a = intervals.get(start).start;
+			for (int i = start; i < intervals.size(); i++)
+				intervals.remove(i);
+			intervals.add(new Interval(a, newInterval.end));
+		} else {
+			for (int i = start; i <= end; i++)
+				intervals.remove(i);
+			intervals.add(start, newInterval);
+		}
+
+		return intervals;
+
+	}
+
+	public static void main(String[] args) {
+		Insert_Interval o = new Insert_Interval();
+		ArrayList<Interval> intervals = new ArrayList<Interval>();
+		intervals.add(new Interval(1, 5));
+		o.insert(intervals, new Interval(2, 7));
+	}
+
+}

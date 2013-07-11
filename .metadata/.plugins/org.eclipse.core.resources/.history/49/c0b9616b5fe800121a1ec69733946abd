@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 8, 2013
+ * 
+ */
+public class Permutations {
+
+	public ArrayList<ArrayList<Integer>> permute(int[] num) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+
+		for (int i = 0; i < num.length; i++) {
+			ArrayList<ArrayList<Integer>> cur = new ArrayList<ArrayList<Integer>>();
+			for (ArrayList<Integer> temp : res) {
+				for (int j = 0; j < num.length; j++) {
+					if (!temp.contains(j)) {
+						temp.add(j);
+						cur.add(temp);
+					}
+				}
+			}
+			res = new ArrayList<ArrayList<Integer>>(cur);
+		}
+		return res;
+	}
+}
