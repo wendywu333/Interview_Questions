@@ -9,9 +9,10 @@ import java.util.ArrayList;
  * @author Wenzhe
  * @date 7/11/2013
  * 
- * passed all tests
  */
 public class Path_Sum_II {
+
+	
 
 	public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
 		// Start typing your Java solution below
@@ -38,11 +39,11 @@ public class Path_Sum_II {
 
 		ArrayList<Integer> le = new ArrayList<Integer>(aRes);
 		le.add(root.val);
-		pathS(root.left, sum - root.val, le, res);
+		pathS(root.left, sum - root.val, le);
 
 		ArrayList<Integer> rt = new ArrayList<Integer>(aRes);
 		rt.add(root.val);
-		pathS(root.right, sum - root.val, rt, res);
+		pathS(root.right, sum - root.val, rt);
 
 	}
 

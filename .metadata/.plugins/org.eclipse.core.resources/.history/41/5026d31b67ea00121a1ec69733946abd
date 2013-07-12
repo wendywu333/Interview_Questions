@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date 4/3/2013
+ * 
+ */
+public class Path_Sum_II {
+
+	ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+
+	public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<Integer> aRes = new ArrayList<Integer>();
+		pathS(root, sum, aRes);
+		return res;
+
+	}
+
+	private ArrayList<Integer> pathS(TreeNode root, int sum,
+			ArrayList<Integer> aRes) {
+		// TODO Auto-generated method stub
+		if (root == null && sum == 0)
+			return aRes;
+		return null;
+	}
+
+}

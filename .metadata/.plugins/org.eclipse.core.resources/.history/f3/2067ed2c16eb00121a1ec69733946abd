@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * @author Wenzhe
+ * @date Jul 12, 2013
+ * 
+ */
+public class Binary_Tree_Level_Order_Traversal {
+
+	public ArrayList<ArrayList<Integer>> levelOrder(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		LinkedList<TreeNode> a = new LinkedList<TreeNode>();
+		LinkedList<TreeNode> b = new LinkedList<TreeNode>();
+		TreeNode temp;
+		a.add(root);
+		while (a.size() != 0 || b.size() != 0) {
+			if (a.size() != 0) {
+				ArrayList<Integer> aRes = new ArrayList<Integer>();
+				while (a.size() != 0) {
+					temp = a.remove();
+					aRes.add(temp.val);
+					b.add(temp.left);
+					b.add(temp.right);
+				}
+				res.add(aRes);
+			}
+
+			if (b.size() != 0) {
+				ArrayList<Integer> aRes = new ArrayList<Integer>();
+				while (b.size() != 0) {
+					temp = b.remove();
+					aRes.add(temp.val);
+					a.add(temp.left);
+					a.add(temp.right);
+				}
+				res.add(aRes);
+			}
+		}
+
+		return res;
+
+	}
+
+}

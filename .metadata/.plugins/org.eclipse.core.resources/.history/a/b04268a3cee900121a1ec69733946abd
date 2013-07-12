@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 10, 2013
+ *
+ */
+public class Distinct_Subsequences {
+	
+	public int numDistinct(String S, String T) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+		
+		
+		return 0;
+        
+    }
+
+}

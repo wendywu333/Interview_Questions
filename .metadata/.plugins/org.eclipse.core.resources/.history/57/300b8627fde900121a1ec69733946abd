@@ -20,8 +20,6 @@ public class Distinct_Subsequences {
 			num[0][0] = 1;
 		else
 			num[0][0] = 0;
-		
-		
 
 		return 0;
 

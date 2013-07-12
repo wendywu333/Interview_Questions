@@ -9,7 +9,6 @@ import java.util.ArrayList;
  * @author Wenzhe
  * @date 7/11/2013
  * 
- * passed all tests
  */
 public class Path_Sum_II {
 

@@ -9,21 +9,21 @@ import java.util.ArrayList;
  * @author Wenzhe
  * @date 7/11/2013
  * 
- * passed all tests
  */
 public class Path_Sum_II {
+
+	ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 
 	public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> aRes = new ArrayList<Integer>();
-		pathS(root, sum, aRes, res);
+		pathS(root, sum, aRes);
 		return res;
 
 	}
 
-	private void pathS(TreeNode root, int sum, ArrayList<Integer> aRes, ArrayList<ArrayList<Integer>> res) {
+	private void pathS(TreeNode root, int sum, ArrayList<Integer> aRes) {
 		// TODO Auto-generated method stub
 		if (root == null)
 			return;
@@ -38,11 +38,11 @@ public class Path_Sum_II {
 
 		ArrayList<Integer> le = new ArrayList<Integer>(aRes);
 		le.add(root.val);
-		pathS(root.left, sum - root.val, le, res);
+		pathS(root.left, sum - root.val, le);
 
 		ArrayList<Integer> rt = new ArrayList<Integer>(aRes);
 		rt.add(root.val);
-		pathS(root.right, sum - root.val, rt, res);
+		pathS(root.right, sum - root.val, rt);
 
 	}
 

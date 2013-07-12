@@ -11,15 +11,11 @@ package LeetCode;
 public class Distinct_Subsequences {
 
 	public int numDistinct(String S, String T) {
-		// Given a string S and a string T, count the number of distinct
-		// subsequences of T in S.
+		// Given a string S and a string T, count the number of distinct subsequences of T in S.
 		if (S.length() == 0 || T.length() == 0)
 			return 0;
 		int[][] num = new int[S.length()][T.length()];
-		if (S.charAt(0) == T.charAt(0))
-			num[0][0] = 1;
-		else
-			num[0][0] = 0;
+		num[0][0]
 		
 		
 

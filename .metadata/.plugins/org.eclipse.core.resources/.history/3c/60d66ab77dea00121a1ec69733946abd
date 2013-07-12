@@ -9,41 +9,48 @@ import java.util.ArrayList;
  * @author Wenzhe
  * @date 7/11/2013
  * 
- * passed all tests
  */
 public class Path_Sum_II {
+
+	ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 
 	public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> aRes = new ArrayList<Integer>();
-		pathS(root, sum, aRes, res);
+		pathS(root, sum, aRes);
 		return res;
 
 	}
 
-	private void pathS(TreeNode root, int sum, ArrayList<Integer> aRes, ArrayList<ArrayList<Integer>> res) {
+	private void pathS(TreeNode root, int sum, ArrayList<Integer> aRes) {
 		// TODO Auto-generated method stub
 		if (root == null)
 			return;
 
 		if (root.left == null && root.right == null) {
 			if (sum == root.val) {
+				ArrayList<Integer> aRes = new ArrayList<Integer>();
 				aRes.add(root.val);
-				res.add(new ArrayList<Integer>(aRes));
+				res.add(aRes);
 			}
+
 			return;
+
 		}
 
-		ArrayList<Integer> le = new ArrayList<Integer>(aRes);
-		le.add(root.val);
-		pathS(root.left, sum - root.val, le, res);
+		ArrayList<Integer> a = pathS(root.left, sum - root.val);
+		if (a != null) {
+			a.add(0, root.val);
+			return a;
+		}
+		ArrayList<Integer> b = pathS(root.right, sum - root.val);
+		if (b != null) {
+			b.add(0, root.val);
+			return b;
+		}
 
-		ArrayList<Integer> rt = new ArrayList<Integer>(aRes);
-		rt.add(root.val);
-		pathS(root.right, sum - root.val, rt, res);
-
+		return null;
 	}
 
 	public static void main(String args[]) {
