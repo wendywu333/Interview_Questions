@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 13, 2013
+ *
+ */
+public class Valid_Parentheses {
+	
+	 public boolean isValid(String s) {
+	        // Start typing your Java solution below
+	        // DO NOT write main() function
+		 	boolean square = true, round = true, big = true;
+		 	for(int i = 0; i < s.length(); i++){
+		 		switch(s.charAt(i)){
+		 		
+		 		case '[':
+		 			if(!square)
+		 				return false;
+		 			else
+		 				square = false;
+		 		case ']':
+		 			if(square)
+		 				return false;
+		 			else
+		 				square = true;
+		 		case '{':
+		 			if(!big)
+		 				return false;
+		 			else
+		 				big = false;
+		 		case '}':
+		 			if(big)
+		 				return false;
+		 			else
+		 				big = true;
+		 		case '(':
+		 			if(!round)
+		 				return false;
+		 			else
+		 				round = false;
+		 		case ')':
+		 			if(round)
+		 				return false;
+		 			else
+		 				round = true;
+		 		
+		 		}
+		 			
+		 	}
+	        return (round && big && square);
+	    }
+}

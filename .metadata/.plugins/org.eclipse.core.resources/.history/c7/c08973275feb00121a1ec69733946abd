@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 12, 2013
+ * 
+ */
+public class Subsets {
+
+	public ArrayList<ArrayList<Integer>> subsets(int[] S) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		res.add(new ArrayList<Integer>());
+		if (S == null || S.length == 0)
+			return res;
+		
+		
+
+		return res;
+
+	}
+
+}

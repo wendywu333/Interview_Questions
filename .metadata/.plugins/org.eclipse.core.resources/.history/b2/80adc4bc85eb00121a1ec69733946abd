@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 12, 2013
+ * 
+ */
+public class Triangle {
+
+	public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
+
+		// level i (from top) has i+1 elements
+		if (triangle == null || triangle.size() == 0)
+			return 0;
+		int n = triangle.size();
+		// min[i]: the minimum path sum of sub triangle that top is i level's
+		// most right, and bottom is the bottom of given triangle
+		int[] min = new int[n];
+		// level n-1 (from top) has n elements, the most right's index is n-1
+		min[0] = triangle.get(n - 1).get(n - 1);
+
+		return min[n - 1];
+	}
+}

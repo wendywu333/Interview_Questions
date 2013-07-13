@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 12, 2013
+ * 
+ */
+public class Binary_Tree_Level_Order_Traversal_II {
+
+	public ArrayList<ArrayList<Integer>> levelOrderBottom(TreeNode root) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if (root == null)
+			return res;
+		LinkedList<TreeNode> a = new LinkedList<TreeNode>();
+		LinkedList<TreeNode> b = new LinkedList<TreeNode>();
+		a.add(root);
+		while (a.size() != 0 || b.size() != 0) {
+			if (a.size() != 0) {
+				dealWith(a, b, res);
+
+			}
+
+			if (b.size() != 0) {
+				dealWith(b, a, res);
+			}
+		}
+		ArrayList<Integer> temp;
+		for (int i = 0; i <= res.size() / 2; i++) {
+			temp = res.get(i);
+			res.set(i, res.get(res.size() - i));
+			res.set(res.size() - i, temp);
+
+		}
+
+		return res;
+
+	}
+
+	private void dealWith(LinkedList<TreeNode> full,
+			LinkedList<TreeNode> empty, ArrayList<ArrayList<Integer>> res) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> aRes = new ArrayList<Integer>();
+		while (empty.size() != 0) {
+			TreeNode temp = full.remove();
+			aRes.add(temp.val);
+			if (temp.left != null)
+				empty.add(temp.left);
+			if (temp.right != null)
+				empty.add(temp.right);
+		}
+		res.add(aRes);
+
+	}
+
+}

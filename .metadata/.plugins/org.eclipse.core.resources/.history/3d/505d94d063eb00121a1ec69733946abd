@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 12, 2013
+ * 
+ */
+public class Triangle {
+
+	public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (triangle == null || triangle.size() == 0)
+			return 0;
+		int n = triangle.size();
+		int[] min = new int[n];
+
+		min[0] = triangle.get(0).get(0);
+
+		for (int i = 1; i < n - 1; i++) {
+
+		}
+
+		return min[n - 1];
+
+	}
+
+}

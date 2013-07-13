@@ -10,8 +10,7 @@ import java.util.LinkedList;
  * @author Wenzhe
  * @date Jul 12, 2013
  * 
- * passed all tests
- * using two queue
+ *       passed all tests using two queue
  * 
  */
 public class Binary_Tree_Level_Order_Traversal {
