@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 13, 2013
+ *
+ */
+public class Jump_Game {
+	
+	public boolean canJump(int[] A) {
+        // Start typing your Java solution below
+        // DO NOT write main() function
+        
+		return true;
+    }
+
+}

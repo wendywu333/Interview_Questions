@@ -9,7 +9,6 @@ import java.util.Stack;
  * @author Wenzhe
  * @date Jul 13, 2013
  * 
- * passed all tests
  */
 public class Valid_Parentheses {
 

@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 13, 2013
+ * 
+ */
+public class Generate_Parentheses {
+
+	public ArrayList<String> generateParenthesis(int n) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<String> res = new ArrayList<String>();
+		
+		getP(n, n ,res);
+
+		
+
+		return res;
+	}
+
+	private void getP(int n, int n2, ArrayList<String> res) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+	
