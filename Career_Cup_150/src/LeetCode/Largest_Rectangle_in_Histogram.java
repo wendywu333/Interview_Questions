@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.Stack;
+
+/**
+ * @author Wenzhe
+ * @date Jul 14, 2013
+ * 
+ * http://blog.csdn.net/abcbc/article/details/8943485
+ */
+
+public class Largest_Rectangle_in_Histogram {
+
+	public int largestRectangleArea(int[] height) {
+
+		int area = 0;
+		Stack<Integer> stack = new Stack<Integer>();
+		for (int i = 0; i < height.length; i++) {
+			if (stack.empty() || height[i] > height[stack.peek()]) {
+				stack.push(i);
+			} else {
+				int start = stack.pop();
+				int width = stack.empty() ? i : i - stack.peek() - 1;
+				area = Math.max(area, height[start] * width);
+				i--;
+			}
+		}
+		while (!stack.empty()) {
+			int start = stack.pop();
+			int width = stack.empty() ? height.length : height.length
+					- stack.peek() - 1;
+			area = Math.max(area, height[start] * width);
+
+		}
+
+		return area;
+	}
+
+	public int largestRectangleAreaSimple(int[] height) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (height == null || height.length == 0)
+			return 0;
+		int n = height.length;
+		int max = height[0];
+		int[] min = new int[n]; // store indices
+		min[0] = 0;
+		for (int i = 1; i < n; i++) {
+			if (height[i] < height[i - 1]) {
+				for (int t = i - 1; t >= 0; t--) {
+					if (height[t] > height[i])
+						min[t] = i;
+					if (height[t] < height[i])
+						break;
+				}
+			}
+			min[i] = i;
+
+			for (int j = i; j >= 0; j--) {
+				max = Math.max(max, (i - j + 1) * height[min[j]]);
+			}
+		}
+		return max;
+	}
+}

@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 14, 2013
+ * 
+ */
+public class Largest_Rectangle_in_Histogram {
+
+	public int largestRectangleArea(int[] height) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		int n = height.length;
+		int[] min = new int[n];
+		int max = Integer.MIN_VALUE;
+
+		for (int i = 0; i < n; i++) {
+
+			min[i] = Math.min(height[i], min[i - 1]);
+			for (int j = i - 1; j >= 0; j--) {
+				max = Math.max(max, min[i]);
+			}
+
+		}
+
+		return max;
+	}
+
+}

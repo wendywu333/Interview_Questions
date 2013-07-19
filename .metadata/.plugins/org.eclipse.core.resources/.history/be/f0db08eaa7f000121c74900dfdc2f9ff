@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.ArrayList;
+
+/**
+ * @author Wenzhe
+ * @date Jul 19, 2013
+ * 
+ */
+public class Pascals_Triangle {
+
+	public ArrayList<ArrayList<Integer>> generate(int numRows) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+		if (numRows == 0)
+			return res;
+		ArrayList<Integer> lineOne = new ArrayList<Integer>(1);
+		lineOne.add(1);
+		res.add(lineOne);
+		for (int i = 0; i < numRows - 1; i++) {
+
+		}
+
+		return res;
+
+	}
+
+}

@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package LeetCode;
+
+import java.util.HashMap;
+
+/**
+ * @author Wenzhe
+ * @date Jul 18, 2013
+ * 
+ */
+public class Remove_Duplicates_from_Sorted_Array_II {
+
+	public int removeDuplicates(int[] A) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		HashMap<Integer, Integer> ht = new HashMap<Integer, Integer>();
+		for (int i = 0; i < A.length; i++) {
+			if (!ht.containsKey(A[i])) {
+				ht.put(A[i], 1);
+			} else {
+				ht.put(A[i], ht.get(A[i]) + 1);
+			}
+		}
+
+		int size = 0;
+		for (Integer t : ht.keySet()) {
+			for (int i = 0; i < ht.get(t); i++) {
+				A[size] = t;
+				size++;
+				if (i == 2)
+					break;
+			}
+		}
+
+		return size;
+	}
+
+}
