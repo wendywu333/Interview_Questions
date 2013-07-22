@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package LeetCode;
+
+/**
+ * @author Wenzhe
+ * @date Jul 22, 2013
+ * 
+ */
+public class Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal {
+
+	public TreeNode buildTree(int[] preorder, int[] inorder) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		if (preorder.length == 0)
+			return null;
+		
+		return build(0, preorder.length-1,0,inorder.length-1);
+
+	}
+
+	private TreeNode build(int low, int high, int low2, int high2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
