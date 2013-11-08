@@ -28,6 +28,7 @@ class BinaryTree<T> {
 	}
 
 	// Add (insert) node, binary search tree
+	@SuppressWarnings("unchecked")
 	public void insert(T value) {
 		if (!(value instanceof Comparable)) {
 			System.out
@@ -54,13 +55,13 @@ class BinaryTree<T> {
 					return;
 				} else {
 					// Note: T Object types must support Comparable<T> interface
-					if (((Comparable) current.getData()).compareTo(value) > 0)
+					if (((Comparable<T>) current.getData()).compareTo(value) > 0)
 						current = current.getLRef();
 					else
 						current = current.getRRef();
 				}
 			}
-			if (((Comparable) previous.getData()).compareTo(value) > 0)
+			if (((Comparable<T>) previous.getData()).compareTo(value) > 0)
 				previous.setLRef(newNode);
 			else
 				previous.setRRef(newNode);
