@@ -18,6 +18,7 @@ public class MusicTest1 {
 	
 	public void play(){
 		try {
+			@SuppressWarnings("unused")
 			Sequencer sequencer = MidiSystem.getSequencer();
 		} catch (MidiUnavailableException e) {
 			// TODO Auto-generated catch block

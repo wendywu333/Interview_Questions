@@ -39,6 +39,8 @@ public class XOR_key {
 			tc++;
 
 		}
+		
+		sin.close();
 	}
 
 	private static int xOrq(int[] arr, int[][] query, int sizeQ) {

@@ -6,11 +6,8 @@
  * @author Wenzhe
  *
  */
-import java.io.*;
+
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class K_diff {
 
@@ -42,5 +39,6 @@ public class K_diff {
             }
         }
         System.out.println(result);
+        sin.close();
     }
 }

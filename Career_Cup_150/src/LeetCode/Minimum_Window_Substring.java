@@ -16,7 +16,6 @@ import java.util.PriorityQueue;
  */
 public class Minimum_Window_Substring {
 
-	@SuppressWarnings("unchecked")
 	public String minWindow(String S, String T) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
@@ -27,7 +26,7 @@ public class Minimum_Window_Substring {
 		int startIndex = -1;
 
 		HashMap<Character, Integer> ht = new HashMap<Character, Integer>();
-		HashMap<Character, LinkedList> ht2 = new HashMap<Character, LinkedList>();
+		HashMap<Character, LinkedList<Integer>> ht2 = new HashMap<Character, LinkedList<Integer>>();
 
 		for (int j = 0; j < T.length(); j++) {
 			if (ht.containsKey(T.charAt(j))) {
